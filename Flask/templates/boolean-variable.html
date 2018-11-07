@@ -2,14 +2,16 @@
 <html>
   <head>
     <title>JavaScript &amp; jQuery - Chapter 2: Basic JavaScript Instructions - Boolean Variable</title>
-    <link rel="stylesheet" href="css/c02.css" />
+    <link rel="stylesheet" href="../static/css/c02.css"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/c02.css') }}">
   </head>
   <body>
     <h1>Elderflower</h1>
-    <script src="js/boolean-variable.js"></script>
     <div id="content">
-      <input onclick = "accepting()" class = 'true' type="image" id="yes" src = "images/tick.jpg">
-      <input  onclick = "refuse()" class = 'false'type="image" id="no" src = "images/cross.jpg">
+      <script type="text/javascript" src="{{ url_for('static', filename='boolean-variable.js') }}"></script>
+      <script src="../static/boolean-variable.js"></script>
+      <input onclick = "accepting()" class = 'true' type="image" id="yes" src = "../static/images/tick.jpg">
+      <input  onclick = "refuse()" class = 'false'type="image" id="no" src = "../static/images/cross.jpg">
     </div>
     
   </body>
