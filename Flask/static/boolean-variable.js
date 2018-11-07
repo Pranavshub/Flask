@@ -15,12 +15,12 @@ function accepting(){
 	answer = "yes"
 	var no = document.getElementById('no');
 	no.parentNode.removeChild(no)
-	document.getElementById('yes').src = "/static/images/yay.png";
+	document.getElementById('yes').src = "../static/images/yay.png";
 }
 function refuse(){
 	answer = "no"
 	var yes = document.getElementById('yes');
 	yes.parentNode.removeChild(yes)
 	//no.parentNode.appendChild(no)
-	document.getElementById('no').src = "/static/images/error.gif";
+	document.getElementById('no').src = "../static/images/error.gif";
 }
